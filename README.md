@@ -11,15 +11,13 @@ $ go get github.com/bakerolls/dither
 
 ```go
 func main() {
-	r, err := os.Open("dag.png")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// ...
 	img, _, err := image.Decode(r)
 	if err != nil {
 		log.Fatal(err)
 	}
 	img = dither.FloydSteinberg(img)
+	// ...
 }
 ```
 
