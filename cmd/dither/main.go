@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/bakerolls/dither"
+	"github.com/bake/dither"
 )
 
 func main() {
